@@ -9,7 +9,7 @@ This work is for University of Bonn's NLP Lab project on Winter Semester 2017/20
 
 ## How to run
 1. Run `python train_vae.py --save {--gpu}`. This will create `vae.bin`. Essentially this is the base VAE as in Bowman, 2015 [2].
-2. Run `python train_discriminator --save {--gpu}`. This will create `ctextgen.bin`. The discriminator is using Kim, 2014 [3] architecture and the training procedure is as in Hu, 2017 [1].
+2. Run `python train_discriminator.py --save {--gpu}`. This will create `ctextgen.bin`. The discriminator is using Kim, 2014 [3] architecture and the training procedure is as in Hu, 2017 [1].
 3. Run `test.py --model {vae, ctextgen}.bin {--gpu}` for basic evaluations, e.g. conditional generation and latent interpolation.
 
 ## Difference compared to the paper
